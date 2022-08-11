@@ -2,7 +2,7 @@
 # to start server and monitor code changes run CL: uvicorn main:app --reload
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routers import post, user, auth, vote
+from .routers import post, user, auth, vote
  
 
 # models.Base.metadata.create_all(bind=engine)
