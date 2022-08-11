@@ -1,11 +1,11 @@
 
-from oauth2 import get_current_user
-import models, schemas, oauth2
+from ..oauth2 import get_current_user
+from .. import models, schemas, oauth2
 from fastapi import Body, Response, status, HTTPException, Depends, APIRouter
 from sqlalchemy import func
 from sqlalchemy.orm import Session
 from typing import List, Optional
-from database import get_db
+from ..database import get_db
 
 
 router = APIRouter(
