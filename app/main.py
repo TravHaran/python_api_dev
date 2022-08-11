@@ -2,11 +2,7 @@
 # to start server and monitor code changes run CL: uvicorn main:app --reload
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
-import models
-from database import engine
 from routers import post, user, auth, vote
-from config import Settings 
  
 
 # models.Base.metadata.create_all(bind=engine)
