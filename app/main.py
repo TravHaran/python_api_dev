@@ -26,7 +26,8 @@ app.include_router(vote.router)
 
 @app.get("/") # decorator to convert function into fast api path operator
 async def root(): # path operation function
-    return {"message": "Successfully added CI/CD!"}
+    return {"message": "Pushing out to Ubuntu!"}
+    
 
 
 
